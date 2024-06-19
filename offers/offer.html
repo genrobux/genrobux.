@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers</title>
+    <meta name="referrer" content="no-referrer">
+    <link rel="stylesheet" href="https://d266key948fg17.cloudfront.net/assets/landing_pages/fa/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif, Arial;
+            background-image: url('https://images.rbxcdn.com/782b7fc18a24ee997efd9a7f02fa4bf9-bg_08072019.jpg');
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 475px;
+            margin: 0 auto;
+            background: #fff;
+            position: relative;
+            border-radius: 50px;
+            color: #333;
+            box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            margin-top: 135px;
+            padding-bottom: 50px;
+        }
+
+        .logo {
+            background-color: #fff;
+            max-width: 120px;
+            margin: auto;
+            padding: 15px;
+            border-radius: 40px;
+            margin-top: -90px;
+            transform: rotate(0deg); /* Ensure the logo is upright */
+        }
+
+        h1 {
+            color: #333333;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .form__input {
+            font-size: 1rem;
+            width: 70%; /* Adjusted width for smaller text box */
+            height: 38px;
+            text-align: left;
+            font-weight: light;
+            line-height: 1.4em;
+            background-color: hsla(0,0%,100%,.9);
+            border-radius: 8px;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-weight: 400;
+            margin: 0;
+            box-sizing: border-box;
+            color: #1f1f1f;
+            border: 1px solid #b8b8b8;
+            box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+            padding: 5px;
+            max-width: 100%;
+            display: inline-block; /* Display inline with the button */
+            vertical-align: middle; /* Align vertically with the button */
+        }
+
+        .btn-cta-lg {
+            color: #f2f4f5;
+            background-color: #393b3d;
+            border: 0px;
+            border-radius: 10px;
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: bolder;
+            vertical-align: middle; /* Align vertically with the input */
+            margin-top: 10px; /* Adjusted margin top */
+            display: inline-block; /* Display inline with the input */
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-cta-lg:hover {
+            background-color: #2c2e2f;
+        }
+
+        a.offer-text {
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            margin-top: 5px;
+            padding: 10px 20px;
+            font-weight: 400;
+            font-size: 1.1em !important;
+            display: block; /* Ensure it takes full width */
+            text-align: center; /* Center align within its container */
+        }
+
+        .gradient {
+            background: #00b06f;
+            margin: 0 auto;
+            padding: 10px 25px;
+            color: #fff;
+            border-radius: 10px;
+            font-weight: 500;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+            text-decoration: none !important;
+            border: 2px solid #eee;
+            position: relative;
+            cursor: pointer;
+            font-size: 1.1em !important;
+            transform: scale(0.9);
+            transition: all 0.15s ease-in-out 0s;
+            display: block; /* Ensure it takes full width */
+            text-align: center; /* Center align within its container */
+        }
+
+        .gradient:hover {
+            transform: scale(1);
+            transition: all 0.15s ease-in-out 0s;
+        }
+
+        .offer-wrapper {
+            margin-top: -7px; /* Adjusted margin top */
+            text-align: center;
+            margin-bottom: 3px; /* Added margin bottom */
+        }
+
+        .text1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2em;
+            font-weight: 400;
+            color: #3c3c3c;
+            width: 90%;
+            margin: 3% auto;
+            text-align: center;
+        }
+
+        .title1 {
+            font-family: 'Poppins', sans-serif;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            text-shadow: 1px 0px 18px rgba(255, 255, 255, 1);
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <div class="container">
+            <div><img src="https://d266key948fg17.cloudfront.net/uploads/162668224932d745224966b28470dd34f3adf9c16b.jpg" class="logo"></div>
+            <h1>Final Step</h1>
+            <div style="display: none;" id="nav-robux-amount" class="textuser">ROBLOX Username: <h1 class="bold">@vzxcv</h1></div>
+            <div id="box-input">
+                <input id="text" minlength="3" maxlength="16" placeholder="Enter Username" class="form__input" required="">
+                <button type="button" class="btn-cta-lg" onclick="step2()">Next</button>
+            </div>
+            <div class="text1">Complete any of the activities below to claim <span style="font-weight: bolder;">10,000</span> Robux</div>
+            <div class="offer-wrapper">
+                <a class="gradient offer-text" target="_blank" rel="noreferrer" href="https://tmtrcks.com/224873/960" title="Get A $500 Lego Voucher!">Get A $500 Lego Voucher!</a>
+            </div>
+            <div class="offer-wrapper">
+                <a class="gradient offer-text" target="_blank" rel="noreferrer" href="https://tmtrcks.com/224873/848" title="Get A $100 Dunkin Donuts Giftcard!">Get A $100 Dunkin Donuts Giftcard!</a>
+            </div>
+            <div class="offer-wrapper">
+                <a class="gradient offer-text" target="_blank" rel="noreferrer" href="https://tmtrcks.com/224873/186" title="Get A $750 Amazon Giftcard!">Get A $750 Amazon Giftcard!</a>
+            </div>
+            <div class="offer-wrapper">
+                <a class="gradient offer-text" target="_blank" rel="noreferrer" href="https://tmtrcks.com/224873/901" title="Get A $750 Temu Giftcard!">Get A $750 Temu Giftcard</a>
+            </div>
+        </div>
+    </center>
+
+    <script>
+        function step2() {
+            var username = document.getElementById("text").value;
+            var robux = document.getElementById("nav-robux-amount");
+            robux.innerHTML = 'ROBLOX Username: <h1 class="bold">@' + username + '</h1>';
+            robux.classList.add("textuser");
+            document.getElementById("nav-robux-amount").style.display = "block";
+            document.getElementById("box-input").style.display = "none";
+        }
+    </script>
+</body>
+</html>
